@@ -1,0 +1,8 @@
+class Shape:
+    def area(self):
+        raise NotImplementedError("subclasses must implement area()")
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+print(Square(3))
